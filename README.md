@@ -8,7 +8,7 @@
 -->
 # vue3.0-test
 
-## yarn create vite-app <project-name> 创建 vite+vue3.0
-### cd <project-name>
+## yarn create vite-app [project-name] 创建 vite+vue3.0
+### cd [project-name] 进入项目目录
 ### yarn 安装依赖
 ### yarn dev 启动项目
