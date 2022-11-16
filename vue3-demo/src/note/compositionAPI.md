@@ -2,7 +2,7 @@
  * @Author: lujiayu lujiayu@shiqiao.com
  * @Date: 2022-11-16 17:23:12
  * @LastEditors: lujiayu lujiayu@shiqiao.com
- * @LastEditTime: 2022-11-16 17:33:47
+ * @LastEditTime: 2022-11-16 17:46:58
  * @FilePath: /vue3.0-test/vue3-demo/src/note/compositionAPI.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -24,4 +24,15 @@
          更好的重用逻辑代码（在vue2 Options API中通过Mixins重用逻辑代码，容易发生命名冲突且关系不清）
 
 
-    vue3.0 composition-api 可理解为 vue2.0中 data, computed, methods
+    * vue3.0 composition-api 可理解为 vue2.0中 data, computed, methods watch 的方法集合 （组合式API）*
+
+  
+   > composition-api提供了一下几种函数：
+     > * setup  所有组合式api的代码都要写在里面  可理解为所有js写在这个函数中 外面包裹的大函数（类似html body）
+       * ref          定义简单类型响应式数据 例如：String、Boolean、Number、Array
+       * reactive     定义复杂类型响应式数据 例如：Object
+       * watchEffect  监听数据变化
+       * watch        监听数据变化
+       * computed     计算属性
+       * toRefs       结构响应书对象数据
+       * 生命周期hooks  声明周期
